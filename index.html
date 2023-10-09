@@ -1,0 +1,294 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE-edge">
+    <meta name="viewport" content="width-device-width, initial-scale=1.0">
+    <title>ERA Pharmaceauticals</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/9e9d447e85.js" crossorigin="anonymous"></script>
+</head>
+<body>
+<div id="header">
+    <div class="container">
+        <nav>
+            <img src="images\logo era.jpg" class="logo">
+            <ul id="sidemenu">
+                <li><a href="#header">Home</a></li>
+                <li><a href="#about">About Us</a></li>
+                <li><a href="#services">Products</a></li>
+                <li><a href="#portfolio">Careers</a></li>
+                <li><a href="#contact">Contact Us</a></li>
+                <!-- <i class="fa-solid fa-square-xmark" onclick="closemenu()"></i> -->
+            </ul>
+            <i class="fa-solid fa-bars" onclick="openmenu"></i>
+        </nav>
+        <!-- ------------------------ Slideshow ------------------------------------------ -->
+
+        <!-- Slideshow container -->
+        <div class="slideshow-container">
+
+            <!-- Full-width images with number and caption text -->
+            <div class="mySlides fade">
+            <div class="numbertext">1 / 4</div>
+            <img src="images/complete_healthcare.jpg" style="width:100%">
+            <div class="text">Complete Healthcare</div>
+            </div>
+        
+            <div class="mySlides fade">
+            <div class="numbertext">2 / 4</div>
+            <img src="images/women_healthcare.jpg" style="width:100%">
+            <div class="text">Women Healthcare</div>
+            </div>
+        
+            <div class="mySlides fade">
+            <div class="numbertext">3 / 4</div>
+            <img src="images/skin_healthcare.jpg" style="width:100%">
+            <div class="text">Skin & Hair Care</div>
+            </div>
+
+            <div class="mySlides fade">
+            <div class="numbertext">4 / 4</div>
+            <img src="images/bone healtcare.jpg" style="width:100%">
+            <div class="text">Bone & joint Care</div>
+            </div>
+        
+            <!-- Next and previous buttons -->
+            <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+            <a class="next" onclick="plusSlides(1)">&#10095;</a>
+        </div>
+        <br>
+        
+        <!-- The dots/circles -->
+        <div style="text-align:center">
+            <span class="dot" onclick="currentSlide(1)"></span>
+            <span class="dot" onclick="currentSlide(2)"></span>
+            <span class="dot" onclick="currentSlide(3)"></span>
+            <span class="dot" onclick="currentSlide(4)"></span>
+        </div>
+
+        <script>
+            var slideIndex = 0;
+            carousel();
+
+            function carousel() {
+            var i;
+            var x = document.getElementsByClassName("mySlides");
+            for (i = 0; i < x.length; i++) {
+                x[i].style.display = "none";
+            }
+            slideIndex++;
+            if (slideIndex > x.length) {slideIndex = 1}
+            x[slideIndex-1].style.display = "block";
+            setTimeout(carousel, 4000); // Change image every 4 seconds
+}
+            
+        </script>
+<!-- ----------------------------------------- Slideshow ------------------------------------------ -->
+        <div class="header-text">
+            <div class="about-col-1">
+                <h2 class="sub-title">Home</h2><br>
+
+                <p>Established in 2004, Era Pharmaceuticals Pvt. Ltd. has been a pioneer in the pharmaceutical industry, consistently setting new standards in the field of healthcare.<br>
+                <br>
+                From the very start, Era Pharmaceuticals has been committed to delivering exceptional quality and therapeutic value in every product we offer. We take immense pride in our continuous success in introducing innovative healthcare solutions, making a meaningful difference in people's lives.<br>
+                <br>
+                Specializing in Women’s Health Care, Bone and Joints Care, Skin and Hair Care, and overall Health Care, our diverse portfolio is designed to meet the diverse needs of our customers. What sets us apart is our pioneering spirit – we are the first in India to introduce GLM (Green Lipped Mussel extract) and Emu oil formulations. Additionally, we are among the first few in the country to bring forth L-Arginine Gel/Sachets and L-Glutamine Sachets, showcasing our commitment to pushing the boundaries of pharmaceutical innovation.<br>
+                <br>
+                At Era Pharmaceuticals, we are not just a company; we are a commitment to your well-being. With a relentless pursuit of excellence and a passion for innovation, we stand at the forefront of healthcare, ensuring a healthier and happier tomorrow for everyone we serve.<br>
+                </p>
+            <!-- <h1>Hi, I am<br><span>Kushagra</span></h1> -->
+                <h2 class="sub-title"><br>Product Portfolio</h2>
+                <div class="women">
+                    <img src="images\women.jpg">
+                    <img src="images\joint.jpg">
+                    <img src="images\skin.jpg">
+                    <img src="images\complete.jpg">
+                </div>
+                <div class="t1">
+                    <p>Women Healthcare</p>
+                </div>
+            </div>
+            
+        </div>
+</div>
+<!-------------------about----------------------> 
+<!-- <div id="about">
+    <div class="container">
+        <div class="row">
+            <div class="about-col-2">
+                <img src="images\home-page-background.png">
+            </div>
+            <div class="about-col-3">
+                <h1 class="sub-title">About Us</h1>
+                <div class="tab-titles">
+                    <p class="tab-links active-link" onclick="opentab('meet')">Meet Our Directors</p>
+                    <p class="tab-links" onclick="opentab('journey')">Our Journey</p>
+                    <p class="tab-links" onclick="opentab('companies')">Associated Companies</p>
+                </div>
+                <div class="tab-contents active-tab" id="meet">
+                    <ul>
+                        <li><span>Web App Development</span><br>Design Web App using Python & Flask Framework</li>
+                        <li><span>Data Engineering</span><br>Construct data pipelines for processing structured, semi-structured and unstructured data.</li>
+                        <li><span>Data Science</span><br>Cleaming & Pre-processing of data, ML Model Building</li>
+                        <li><span>Data Analysis</span><br>Dashboard creation using Tableau, PowerBI, Google Looker Studio</li>
+                    </ul>
+                </div>
+                <div class="tab-contents" id="experience">
+                    <ul>
+                        <li><span>2022 - Current</span><br>Analyst/Software Engineer [Capgemini India, Pune]</li>
+                        
+                    </ul>
+                </div>
+                <div class="tab-contents" id="education">
+                    <ul>
+                        <li><span>2021-2022</span><br>Learning Path in Data Science [Board Infinity, Mumbai]</li>
+                        <li><span>2015 - 2019</span><br>Bachelor of Engineering - Information Technology [Acropolis Institute of Technology, Indore]</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+</div> -->
+
+<!-- ------------------------------services---------------------
+<div id="services">
+    <div class="container">
+        <h1 class="sub-title">My Services</h1>
+        <div class="services-list">
+            <div>
+                <i class="fa-solid fa-code"></i>
+                <h2>Web Development</h2>
+                <p>Flask web development is a Python-based framework for building web applications that are lightweight, flexible, and easy to get started with.</p>
+                <a href="#">Learn More</a>
+            </div>
+            <div>
+                <i class="fa-solid fa-wrench"></i>
+                <h2>Data Engineering</h2>
+                <p>Data engineering is the process of collecting, storing, and transforming data into a usable format for analytics and business intelligence.</p>
+                <a href="#">Learn More</a>
+            </div>
+            <div>
+                <i class="fa-solid fa-flask"></i>
+                <h2>Data Science</h2>
+                <p>Data science uses scientific methods, algorithms, processes, and systems to extract knowledge and insights from structured and unstructured data.</p>
+                <a href="#">Learn More</a>
+            </div>
+        </div>
+    </div>    
+</div>
+
+<!-- -----------------------portfolio------------------------------ -->
+
+<!-- <div id="portfolio">
+    <div class="container">
+        <h1 class="sub-title">My Work</h1>
+        <div class="work-list">
+            <div class="work">
+                <img src="images\CE0060b.png">
+                <div class="layer">
+                    <h3>Fake Data Generation/Simulation</h3>
+                    <p>Fake data generation is employed for various purposes, including testing, privacy protection, training, and simulating scenarios when real data isn't suitable or available.</p>
+                    <a href="#"><i class="fa-solid fa-up-right-from-square"></i></a>
+                </div>
+            </div>
+            <div class="work">
+                <img src="images\1_J_EXEmUkOcg-rgzJudUhZQ.png">
+                <div class="layer">
+                    <h3>EDA using Python</h3>
+                    <p>Statistical and visual techniques to understand and summarize the main characteristics, patterns, and relationships within a dataset.</p>
+                    <a href="#"><i class="fa-solid fa-up-right-from-square"></i></a>
+                </div>
+            </div>
+            <div class="work">
+                <img src="images\data-engineering-banner-icon.png">
+                <div class="layer">
+                    <h3>Dashboarding using Tableau</h3>
+                    <p>Created interactive and visually appealing data dashboards that allow users to explore and gain insights from data through dynamic charts, graphs, and filters, facilitating informed decision-making.</p>
+                    <a href="#"><i class="fa-solid fa-up-right-from-square"></i></a>
+                </div>
+            </div>
+            
+        </div>
+        <a href="#" class="btn">See more</a>
+    </div>
+</div> -->
+
+<!-- ---------------------------contact---------------------------- -->
+<!-- <div id="contact">
+    <div class="container">
+        <div class="row">
+            <div class="contact-left">
+                <h1 class="sub-title">Contact Me</h1>
+                <p><i class="fa-solid fa-paper-plane"></i>kushagrapathak1211@gmail.com</p>
+                <p><i class="fa-solid fa-square-phone"></i>+91-6263144125</p>
+                <div class="social-icons">
+                    <a href="https://www.linkedin.com/in/kushagra12/"><i class="fa-brands fa-linkedin"></i></a>
+                    <a href="https://github.com/Kushagra-12"><i class="fa-brands fa-square-github"></i></a>
+                    <a href="https://www.kaggle.com/kushagra1211"><i class="fa-brands fa-kaggle"></i></a>
+                </div>
+                <a href="images\Kushagra Pathak_Resume_18-08-2023.pdf" download class="btn btn2">Download Resume</a>
+            </div>
+            <div class="contact-right">
+                <form name="submit-to-google-sheet">
+                    <input type="text" name="Name" placeholder="Your Name" required>
+                    <input type="email" name="Email" placeholder="Your email" required>
+                    <textarea name="Message" rows="6" placeholder="Your Message"></textarea>
+                    <button type="submit" class="btn btn2">Submit</button>
+                </form>
+                <span id="msg"></span>
+            </div>
+        </div>
+    </div>
+    <div class="copyright">
+        <p>Copyright © Kushagra</p>
+    </div>
+</div> --> 
+
+<!-- <script>
+    var tablinks = document.getElementsByClassName("tab-links")
+    var tabcontents = document.getElementsByClassName("tab-contents")
+    function opentab(tabname){
+        for(tablink of tablinks){
+            tablink.classList.remove("active-link");
+        }
+        for(tabcontent of tabcontents){
+            tabcontent.classList.remove("active-tab");
+        }
+        event.currentTarget.classList.add("active-link");
+        document.getElementById(tabname).classList.add("active-tab");
+    }
+
+
+</script>
+    
+<script>
+    var sidemenu = document.getElementById("sidemenu");
+
+    function openmenu(){
+        sidemenu.style.right = "0";
+    }
+    function closemenu(){
+        sidemenu.style.right = "-200px";
+    }
+</script>
+
+<script>
+    const scriptURL = 'https://script.google.com/macros/s/AKfycby_oES6wzYXghXargp7iTBYjoK2giuUZlVCsVT3x5apIcJmAFLoFRwpewMjZzj5ps6A/exec'
+    const form = document.forms['submit-to-google-sheet']
+    const msg = document.getElementById("msg")
+    form.addEventListener('submit', e => {
+      e.preventDefault()
+      fetch(scriptURL, { method: 'POST', body: new FormData(form)})
+        .then(response => {
+            msg.innerHTML = "Message sent successfully"
+            setTimeout(function(){
+                msg.innerHTML = ""
+            },5000)
+            form.reset()
+        })
+        .catch(error => console.error('Error!', error.message))
+    })
+  </script>
+</body>
+</html> -->
